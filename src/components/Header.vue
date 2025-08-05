@@ -42,7 +42,7 @@
 import { LayoutGrid, List } from "lucide-vue-next";
 import { defineProps, defineEmits } from "vue";
 
-const props = defineProps<{
+const { viewMode } = defineProps<{
   viewMode: "grid" | "table";
 }>();
 
