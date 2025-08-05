@@ -26,7 +26,7 @@
         class="px-4 py-2 rounded text-sm cursor-pointer"
         :class="
           currentPage === page
-            ? 'bg-indigo-600 text-white'
+            ? 'bg-primary text-white'
             : 'bg-white border text-gray-700 hover:bg-gray-100'
         "
       >

@@ -14,7 +14,7 @@
       <slot />
       <button
         @click="onClose"
-        class="mt-6 w-full cursor-pointer bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700"
+        class="mt-6 w-full cursor-pointer bg-primary text-white py-3 rounded-lg hover:bg-indigo-700"
       >
         Close
       </button>

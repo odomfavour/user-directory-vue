@@ -35,26 +35,12 @@
 </template>
 
 <script lang="ts" setup>
+import type { Person } from "@/types/Person";
 import { Mail, MapPin } from "lucide-vue-next";
 
-type User = {
-  name: { title: string; first: string; last: string };
-  email: string;
-  phone: string;
-  picture: { large: string; thumbnail: string };
-  location: {
-    street: { number: number; name: string };
-    city: string;
-    state: string;
-    country: string;
-    postcode: string | number;
-  };
-  dob: { age: number };
-  login: { uuid: string };
-};
 
 const props = defineProps<{
-  filteredUsers: User[];
-  openModal: (user: User) => void;
+  filteredUsers: Person[];
+  openModal: (user: Person) => void;
 }>();
 </script>

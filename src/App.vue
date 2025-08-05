@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+  <div class="min-h-screen bg-secondary">
     <Header v-model:viewMode="viewMode" @changeView="setViewMode" />
 
     <div class="max-w-7xl mx-auto px-4 py-8">
