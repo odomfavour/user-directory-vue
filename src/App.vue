@@ -134,7 +134,6 @@ const {
 } = useQuery({
   queryKey: ["users", currentPage, usersPerPage],
   queryFn: fetchUsers,
-  placeholderData: () => [],
 });
 
 const filteredUsers = computed(() =>

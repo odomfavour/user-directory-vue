@@ -3,7 +3,7 @@
     <div class="text-center mb-6">
       <img
         :src="selectedUser?.picture?.large"
-        class="h-32 w-32 rounded-full mx-auto border-4 border-indigo-100 mb-4"
+        class="h-24 w-24 rounded-full mx-auto border-4 border-indigo-100 mb-4"
         :alt="`${selectedUser?.name.first} ${selectedUser?.name.last}`"
       />
       <h3 class="text-xl font-semibold">
