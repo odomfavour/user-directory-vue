@@ -10,7 +10,7 @@
           {{
             filteredUsers.length === 0
               ? "No users found"
-              : `Showing ${start}–${end} of ${FAKE_TOTAL_USERS} users`
+              : `Showing ${start}–${end} of ${TOTAL_USERS} users`
           }}
         </p>
 
@@ -84,7 +84,7 @@ import UserDetails from "@/components/UserDetails.vue";
 
 import { Search as SearchIcon, User as UserIcon } from "lucide-vue-next";
 
-const FAKE_TOTAL_USERS = 45;
+const TOTAL_USERS = 45;
 
 type RandomUser = {
   name: { title: string; first: string; last: string };
@@ -110,10 +110,10 @@ const usersPerPage = ref(9);
 
 const start = computed(() => (currentPage.value - 1) * usersPerPage.value + 1);
 const end = computed(() =>
-  Math.min(currentPage.value * usersPerPage.value, FAKE_TOTAL_USERS)
+  Math.min(currentPage.value * usersPerPage.value, TOTAL_USERS)
 );
 const totalPages = computed(() =>
-  Math.ceil(FAKE_TOTAL_USERS / usersPerPage.value)
+  Math.ceil(TOTAL_USERS / usersPerPage.value)
 );
 
 const fetchUsers = async () => {
